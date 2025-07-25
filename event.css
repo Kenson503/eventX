@@ -8,7 +8,7 @@ body {
 /* Navbar Styles */
 .navbar {
   transition: all 0.3s ease;
-  background-color: rgba(255, 255, 255, 0.95) !important;
+  
   backdrop-filter: blur(10px);
 }
 
@@ -16,14 +16,7 @@ body {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-brand {
-  font-size: 1.8rem;
-  background: linear-gradient(to right, #4e54c8, #8f94fb);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  font-weight: 700;
-}
+
 
 .nav-link {
   position: relative;
@@ -31,20 +24,7 @@ body {
   font-weight: 500;
 }
 
-.nav-link::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #4e54c8;
-  transition: width 0.3s ease;
-}
 
-.nav-link:hover::after {
-  width: 100%;
-}
 
 /* Card Styles with Animations */
 .card {
