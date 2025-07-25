@@ -176,6 +176,13 @@ h2.text-center:hover::after {
     background-color: #fff;
 }
 
+.zoom-hover {
+  transition: transform 0.4s ease;
+}
+.zoom-hover:hover {
+  transform: scale(1.05);
+}
+
 /* Footer */
 .site-footer {
     background-color: #212529;

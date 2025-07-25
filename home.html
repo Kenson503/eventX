@@ -1,201 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EventX - Discover Amazing Events</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+    />
     <!-- External CSS -->
-    <link rel="stylesheet" href="home.css">
-</head>
-<body>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
     <!-- Navbar (Unchanged) -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand fw-bold text-warning" href="home.html">EventX</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold text-warning" href="home.html">EventX</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" href="home.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="event.html">Events</a>
-                    </li>
-                    
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Browse Events">
-                    <button class="btn btn-success" type="submit">Search</button>
-                </form>
-            </div>
+
         </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero-section">
-        <div class="container text-center">
-            <h1 class="display-3 fw-bold mb-4">Discover Amazing Events</h1>
-            <p class="lead mb-5">Find and book tickets for concerts, conferences, workshops and more</p>
-            <div class="d-flex justify-content-center gap-3">
-                <a href="event.html" class="btn btn-warning btn-lg px-4 py-2 fw-bold">Browse Events</a>
-            </div>
+      <div class="container text-center">
+        <h1 class="display-3 fw-bold mb-4">Discover Amazing Events</h1>
+        <p class="lead mb-5">
+          Find and book tickets for concerts, conferences, workshops and more
+        </p>
+        <div class="d-flex justify-content-center gap-3">
+          <a href="event.html" class="btn btn-warning btn-lg px-4 py-2 fw-bold"
+            >Browse Events</a
+          >
         </div>
+      </div>
     </section>
 
     <!-- Featured Events Carousel -->
     <section class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5 fw-bold">Featured Events</h2>
-            
-            <div id="eventCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#eventCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#eventCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#eventCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner rounded-3">
-                    <div class="carousel-item active">
-                        <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="d-block w-100" alt="Concert">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Summer Music Festival</h5>
-                            <p>Join us for the biggest music event of the year with top artists from around the world.</p>
-                            <a href="event.html" class="btn btn-warning">Get Tickets</a>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://images.unsplash.com/photo-1431540015161-0bf868a2d407?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="d-block w-100" alt="Conference">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Tech Innovation Summit</h5>
-                            <p>Learn from industry leaders about the latest trends in technology and innovation.</p>
-                            <a href="index.html" class="btn btn-warning">Register Now</a>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1512&q=80" class="d-block w-100" alt="Workshop">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Creative Writing Workshop</h5>
-                            <p>Enhance your writing skills with our intensive 2-day workshop with published authors.</p>
-                            <a href="index.html" class="btn btn-warning">Sign Up</a>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#eventCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+
             </div>
+            <div class="carousel-item">
+              <img
+                src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1512&q=80"
+                class="d-block w-100"
+                alt="Workshop"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Creative Writing Workshop</h5>
+                <p>
+                  Enhance your writing skills with our intensive 2-day workshop
+                  with published authors.
+                </p>
+                <a href="index.html" class="btn btn-warning">Sign Up</a>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#eventCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#eventCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
+      </div>
     </section>
 
     <!-- Upcoming Events -->
     <section class="upcoming-events py-5">
-        <div class="container">
-            <h2 class="text-center mb-5 fw-bold">Upcoming Events</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card event-card h-100 shadow-sm">
-                        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Jazz Night">
-                        <div class="card-body">
-                            <span class="badge bg-success mb-2">Music</span>
-                            <h5 class="card-title">Jazz Night Under the Stars</h5>
-                            <p class="card-text text-muted">July 28, 2023 • 7:00 PM</p>
-                            <p class="card-text">Enjoy an evening of smooth jazz performances in our open-air amphitheater.</p>
-                            <a href="index.html" class="btn btn-outline-warning">Book Tickets</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card event-card h-100 shadow-sm">
-                        <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1512&q=80" class="card-img-top" alt="Design Workshop">
-                        <div class="card-body">
-                            <span class="badge bg-primary mb-2">Workshop</span>
-                            <h5 class="card-title">UI/UX Design Masterclass</h5>
-                            <p class="card-text text-muted">August 5, 2023 • 10:00 AM</p>
-                            <p class="card-text">Learn the latest design principles and tools from industry experts.</p>
-                            <a href="index.html" class="btn btn-outline-warning">Register Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card event-card h-100 shadow-sm">
-                        <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Business Conference">
-                        <div class="card-body">
-                            <span class="badge bg-info mb-2">Conference</span>
-                            <h5 class="card-title">Startup Growth Summit</h5>
-                            <p class="card-text text-muted">August 12, 2023 • 9:00 AM</p>
-                            <p class="card-text">Strategies and insights for scaling your startup from successful founders.</p>
-                            <a href="index.html" class="btn btn-outline-warning">Get Passes</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center mt-4">
-
-
-                <a href="event.html" class="btn btn-warning btn-lg px-4">View All Events</a>
 
             </div>
+          </div>
         </div>
+        <div class="text-center mt-4">
+          <a href="event.html" class="btn btn-warning btn-lg px-4"
+            >View All Events</a
+          >
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
-        <footer class="site-footer py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-3">
-                    <h5 class="text-warning">EventX</h5>
-                    <p>Your premier destination for discovering and booking events of all types.</p>
-                </div>
-                <div class="col-md-2 mb-3">
-                    <h5>Quick Links</h5>
-                    <ul class="footer-links">
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="event.html">Events</a></li>
-                        <li><a href="home.html">About Us</a></li>
-                        <li><a href="home.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <h5>Categories</h5>
-                    <ul class="footer-links">
-                        <li><a href="event.html">Concerts</a></li>
-                        <li><a href="event.html">Conferences</a></li>
-                        <li><a href="event.html">Workshops</a></li>
-                        <li><a href="event.html">Sports</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <h5>Connect With Us</h5>
-                    <div class="social-links">
-                        <a href="#"><i class="bi bi-facebook fs-4"></i></a>
-                        <a href="#"><i class="bi bi-twitter fs-4"></i></a>
-                        <a href="#"><i class="bi bi-instagram fs-4"></i></a>
-                        <a href="#"><i class="bi bi-linkedin fs-4"></i></a>
-                    </div>
-                </div>
+    <footer class="site-footer py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <h5 class="text-warning">EventX</h5>
+            <p>
+              Your premier destination for discovering and booking events of all
+              types.
+            </p>
+          </div>
+          <div class="col-md-2 mb-3">
+            <h5>Quick Links</h5>
+            <ul class="footer-links">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="event.html">Events</a></li>
+              <li><a href="home.html">About Us</a></li>
+              <li><a href="home.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-3">
+            <h5>Categories</h5>
+            <ul class="footer-links">
+              <li><a href="event.html">Concerts</a></li>
+              <li><a href="event.html">Conferences</a></li>
+              <li><a href="event.html">Workshops</a></li>
+              <li><a href="event.html">Sports</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-3">
+            <h5>Connect With Us</h5>
+            <div class="social-links">
+              <a href="#"><i class="bi bi-facebook fs-4"></i></a>
+              <a href="#"><i class="bi bi-twitter fs-4"></i></a>
+              <a href="#"><i class="bi bi-instagram fs-4"></i></a>
+              <a href="#"><i class="bi bi-linkedin fs-4"></i></a>
             </div>
-            <hr>
-            <div class="text-center">
-                <p class="mb-0">&copy; 2023 EventX. All rights reserved.</p>
-            </div>
+          </div>
         </div>
+        <hr />
+        <div class="text-center">
+          <p class="mb-0">&copy; 2023 EventX. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
-
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
