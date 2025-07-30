@@ -1,26 +1,25 @@
-
 .site-footer {
-    background-color: #212529;
-    color: white;
+  background-color: #212529;
+  color: white;
 }
 .footer-links {
-    list-style: none;
-    padding-left: 0;
+  list-style: none;
+  padding-left: 0;
 }
 .footer-links li {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 .footer-links a {
-    color: #adb5bd;
-    text-decoration: none;
+  color: #adb5bd;
+  text-decoration: none;
 }
 .footer-links a:hover {
-    color: white;
+  color: white;
 }
 .social-links a {
-    color: white;
-    margin-right: 1rem;
+  color: white;
+  margin-right: 1rem;
 }
 .social-links a:hover {
-    color: #ffc107;
+  color: #ffc107;
 }

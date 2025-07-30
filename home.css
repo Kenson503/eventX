@@ -1,76 +1,77 @@
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
-    background-size: cover;
-    background-position: center;
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  color: white;
 }
 
 /* Event Cards */
 .event-card {
-    transition: transform 0.3s;
+  transition: transform 0.3s;
 }
 .event-card:hover {
-    transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
 /* Carousel */
 .carousel-item {
-    height: 500px;
+  height: 500px;
 }
 .carousel-item img {
-    object-fit: cover;
-    height: 100%;
+  object-fit: cover;
+  height: 100%;
 }
 .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
 }
 
 /* Upcoming Events Section */
 .upcoming-events {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 /* Footer */
 .site-footer {
-    background-color: #212529;
-    color: white;
+  background-color: #212529;
+  color: white;
 }
 .footer-links {
-    list-style: none;
-    padding-left: 0;
+  list-style: none;
+  padding-left: 0;
 }
 .footer-links li {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 .footer-links a {
-    color: #adb5bd;
-    text-decoration: none;
+  color: #adb5bd;
+  text-decoration: none;
 }
 .footer-links a:hover {
-    color: white;
+  color: white;
 }
 .social-links a {
-    color: white;
-    margin-right: 1rem;
+  color: white;
+  margin-right: 1rem;
 }
 .social-links a:hover {
-    color: #ffc107;
+  color: #ffc107;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .hero-section {
-        height: 60vh;
-    }
-    .hero-section h1 {
-        font-size: 2.5rem;
-    }
-    .carousel-item {
-        height: 400px;
-    }
+  .hero-section {
+    height: 60vh;
+  }
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+  .carousel-item {
+    height: 400px;
+  }
 }

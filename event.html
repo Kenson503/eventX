@@ -1,404 +1,491 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EventX | Home</title>
 
     <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="event.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand fw-bold text-warning" href="home.html">EventX</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold text-warning" href="home.html">EventX</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="home.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="event.html">Events</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Browse Events" />
-                    <button class="btn btn-outline-success" type="submit">
-                        Search
-                    </button>
-                </form>
-            </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="event.html">Events</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Browse Events"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
         </div>
+      </div>
     </nav>
 
     <!-- Events Section -->
     <section class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4 text-warning">Upcoming Events</h2>
-            <div class="row g-4">
-                <!-- Event Card 1 -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card h-100 bg-light text-dark border-0 shadow-sm">
-                        <img src="img/black-maximalist-live-band-sunday-design-post-template-96078701c2a9d9c3c214f3aaa76fc0c9.webp"
-                            class="card-img-top img-fluid object-fit-cover zoom-hover" style="height: 200px"
-                            alt="Music Fiesta" />
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold text-warning"> <a href="index.html">Music Fiesta</a> </h5>
-                            <p class="mb-1">
-                                <i class="bi bi-calendar-event"></i> Aug 15, 2025 - 6:00 PM
-                            </p>
-                            <p class="mb-1">
-                                <i class="bi bi-geo-alt"></i> Nairobi Concert Hall
-                            </p>
-                            <span class="badge bg-success">Ksh 1500</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Event Card 2 -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card h-100 bg-light text-dark border-0 shadow-sm">
-                        <img src="img/tickets 5.webp" class="card-img-top img-fluid object-fit-cover zoom-hover"
-                            style="height: 200px" alt="Tech Expo" />
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold text-warning"><a href="index.html">Tech Expo 2025</a></h5>
-                            <p class="mb-1">
-                                <i class="bi bi-calendar-event"></i> Sept 5, 2025 - 10:00 AM
-                            </p>
-                            <p class="mb-1"><i class="bi bi-geo-alt"></i> KICC, Nairobi</p>
-                            <span class="badge bg-danger">Sold Out</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Event Card 3 -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card h-100 bg-light text-dark border-0 shadow-sm">
-                        <img src="img/friday-music-flyer-template-design-ff29f45b038eccef0ab3f142cd7a54ab.jpg"
-                            class="card-img-top img-fluid object-fit-cover zoom-hover" style="height: 200px"
-                            alt="Creative Workshop" />
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold text-warning"><a href="index.html">      Creative Workshop</a>
-                          
-                            </h5>
-                            <p class="mb-1">
-                                <i class="bi bi-calendar-event"></i> Oct 10, 2025 - 2:00 PM
-                            </p>
-                            <p class="mb-1">
-                                <i class="bi bi-geo-alt"></i> Nairobi Art Center
-                            </p>
-                            <span class="badge bg-info">Workshop</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Event Card 4 -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card h-100 bg-light text-dark border-0 shadow-sm">
-                        <img src="img/jazz-live-concert-poster-design-template-7ef4fd32aca9352144e55ab9161ebe8d.webp"
-                            class="card-img-top img-fluid object-fit-cover zoom-hover" style="height: 200px"
-                            alt="Business Summit" />
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold text-warning"><a href="index.html">Business Summit</a></h5>
-                            <p class="mb-1">
-                                <i class="bi bi-calendar-event"></i> Nov 20, 2025 - 9:00 AM
-                            </p>
-                            <p class="mb-1">
-                                <i class="bi bi-geo-alt"></i> Nairobi Conference Center
-                            </p>
-                            <span class="badge bg-warning">Limited Seats</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Event Card 5 -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card h-100 bg-light text-dark border-0 shadow-sm">
-                        <img src="img/metal-night-video-design-template-6b26282a364475a925cee1e0ac88f985.webp"
-                            class="card-img-top img-fluid object-fit-cover zoom-hover" style="height: 200px"
-                            alt="Nairobi Festival" />
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold text-warning"><a href="index.html"> Nairobi Festival</a>
-                               
-                            </h5>
-                            <p class="mb-1">
-                                <i class="bi bi-calendar-event"></i> Dec 25, 2025 - 4:00 PM
-                            </p>
-                            <p class="mb-1">
-                                <i class="bi bi-geo-alt"></i> Nairobi Festival Grounds
-                            </p>
-                            <span class="badge bg-secondary">Free Entry</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Event Card 6 -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card h-100 bg-light text-dark border-0 shadow-sm">
-                        <img src="img/night-club-flyer-design-template-578fe57d1f1d38b8bc50bae88c0e392d.webp"
-                            class="card-img-top img-fluid object-fit-cover zoom-hover" style="height: 200px"
-                            alt="Art Exhibition" />
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold text-warning"><a href="index.html">Art Exhibition</a></h5>
-                            <p class="mb-1">
-                                <i class="bi bi-calendar-event"></i> Jan 15, 2026 - 11:00 AM
-                            </p>
-                            <p class="mb-1">
-                                <i class="bi bi-geo-alt"></i> Nairobi Art Gallery
-                            </p>
-                            <span class="badge bg-primary">Art</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Event Card 7 -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card h-100 bg-light text-dark border-0 shadow-sm">
-                        <img src="img/night-club-flyer-design-template-795b6f160750be23ce8ebf186611a398.webp"
-                            class="card-img-top img-fluid object-fit-cover zoom-hover" style="height: 200px"
-                            alt="Nairobi Music Fest" />
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold text-warning"><a href="index.html">  Nairobi Music Fest</a>
-                              
-                            </h5>
-                            <p class="mb-1">
-                                <i class="bi bi-calendar-event"></i> Aug 10, 2025 - 7:00 PM
-                            </p>
-                            <p class="mb-1">
-                                <i class="bi bi-geo-alt"></i> Kasarani Stadium
-                            </p>
-                            <span class="badge bg-primary">Music</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Event Card 8 -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card h-100 bg-light text-dark border-0 shadow-sm">
-                        <img src="img/purple-maximalist-open-mic-night-a1-design-template-6b664db4b57cb3bec32fa480b886bc21.webp"
-                            class="card-img-top img-fluid object-fit-cover zoom-hover" style="height: 200px"
-                            alt="Literary Summit" />
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold text-warning"><a href="index.html">Literary Summit</a></h5>
-                            <p class="mb-1">
-                                <i class="bi bi-calendar-event"></i> Sep 2, 2025 - 2:00 PM
-                            </p>
-                            <p class="mb-1">
-                                <i class="bi bi-geo-alt"></i> Kenyatta International
-                                Conference Centre
-                            </p>
-                            <span class="badge bg-primary">Conference</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Event Card 9 -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card h-100 bg-light text-dark border-0 shadow-sm">
-                        <img src="img/rock-night-design-template-ef5e544faec956109001198257210c6d.webp"
-                            class="card-img-top img-fluid object-fit-cover zoom-hover" style="height: 200px"
-                            alt="Urban Style Expo" />
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold text-warning"><a href="index.html">Urban Style Expo</a>
-                                
-                            </h5>
-                            <p class="mb-1">
-                                <i class="bi bi-calendar-event"></i> Oct 5, 2025 - 5:00 PM
-                            </p>
-                            <p class="mb-1">
-                                <i class="bi bi-geo-alt"></i> Westgate Mall Rooftop
-                            </p>
-                            <span class="badge bg-primary">Fashion</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Event Card 10 -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card h-100 bg-light text-dark border-0 shadow-sm">
-                        <img src="img/solo-band-acoustic-concert-poster-template-design-b8a3fe3a4aa931d99085f6971d0f8454.webp"
-                            class="card-img-top img-fluid object-fit-cover zoom-hover" style="height: 200px"
-                            alt="Startup Connect" />
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold text-warning"><a href="index.html">  Sunrise Wellness</a></h5>
-                            <p class="mb-1">
-                                <i class="bi bi-calendar-event"></i> Nov 12, 2025 - 9:00 AM
-                            </p>
-                            <p class="mb-1"><i class="bi bi-geo-alt"></i> iHub Nairobi</p>
-                            <span class="badge bg-primary">Tech</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Event Card 11 -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card h-100 bg-light text-dark border-0 shadow-sm">
-                        <img src="img/tickets 5.webp" class="card-img-top img-fluid object-fit-cover zoom-hover"
-                            style="height: 200px" alt="Sunrise Wellness" />
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold text-warning"><a href="index.html">  Sunrise Wellness</a>
-                              
-                            </h5>
-                            <p class="mb-1">
-                                <i class="bi bi-calendar-event"></i> Aug 18, 2025 - 6:30 AM
-                            </p>
-                            <p class="mb-1"><i class="bi bi-geo-alt"></i> Karura Forest</p>
-                            <span class="badge bg-primary">Health</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Event Card 12 -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card h-100 bg-light text-dark border-0 shadow-sm">
-                        <img src="img/tickets 2.webp" class="card-img-top img-fluid object-fit-cover zoom-hover"
-                            style="height: 200px" alt="Flavors of Kenya" />
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold text-warning"><a href="index.html">     Flavors of Kenya</a>
-                           
-                            </h5>
-                            <p class="mb-1">
-                                <i class="bi bi-calendar-event"></i> Dec 5, 2025 - 12:00 PM
-                            </p>
-                            <p class="mb-1">
-                                <i class="bi bi-geo-alt"></i> Nairobi Arboretum
-                            </p>
-                            <span class="badge bg-primary">Food</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Event Card 13 -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card h-100 bg-light text-dark border-0 shadow-sm">
-                        <img src="img/tickets 4.webp" class="card-img-top img-fluid object-fit-cover zoom-hover"
-                            style="height: 200px" alt="Code & Coffee" />
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold text-warning"><a href="index.html">Code & Coffee</a></h5>
-                            <p class="mb-1">
-                                <i class="bi bi-calendar-event"></i> Jul 30, 2025 - 4:00 PM
-                            </p>
-                            <p class="mb-1"><i class="bi bi-geo-alt"></i> Nairobi Garage</p>
-                            <span class="badge bg-primary">Workshop</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Event Card 14 -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card h-100 bg-light text-dark border-0 shadow-sm">
-                        <img src="img/tickets 5.webp" class="card-img-top img-fluid object-fit-cover zoom-hover"
-                            style="height: 200px" alt="Indie Film Night" />
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold text-warning"><a href="index.html">   Indie Film Night</a>
-                       
-                            </h5>
-                            <p class="mb-1">
-                                <i class="bi bi-calendar-event"></i> Oct 22, 2025 - 8:00 PM
-                            </p>
-                            <p class="mb-1">
-                                <i class="bi bi-geo-alt"></i> Prestige Plaza Cinema
-                            </p>
-                            <span class="badge bg-primary">Film</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Event Card 15 -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card h-100 bg-light text-dark border-0 shadow-sm">
-                        <img src="img/tickets 7.webp" class="card-img-top img-fluid object-fit-cover zoom-hover"
-                            style="height: 200px" alt="Paint & Sip" />
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold text-warning"><a href="index.html">Paint & Sip</a></h5>
-                            <p class="mb-1">
-                                <i class="bi bi-calendar-event"></i> Sep 19, 2025 - 3:00 PM
-                            </p>
-                            <p class="mb-1">
-                                <i class="bi bi-geo-alt"></i> Two Rivers Mall
-                            </p>
-                            <span class="badge bg-primary">Art</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Event Card 16 -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card h-100 bg-light text-dark border-0 shadow-sm">
-                        <img src="img/tickets 8.webp" class="card-img-top img-fluid object-fit-cover zoom-hover"
-                            style="height: 200px" alt="Afro Dance Bash" />
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold text-warning"><a href="index.html">Afro Dance Bash</a></h5>
-                            <p class="mb-1">
-                                <i class="bi bi-calendar-event"></i> Aug 25, 2025 - 9:00 PM
-                            </p>
-                            <p class="mb-1">
-                                <i class="bi bi-geo-alt"></i> Sarit Centre Hall
-                            </p>
-                            <span class="badge bg-primary">Dance</span>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="text-center mb-4 text-warning">Upcoming Events</h2>
+        <div class="row g-4">
+          <!-- Event Card 1 -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100 bg-light text-dark border-0 shadow-sm">
+              <img
+                src="img/black-maximalist-live-band-sunday-design-post-template-96078701c2a9d9c3c214f3aaa76fc0c9.webp"
+                class="card-img-top img-fluid object-fit-cover zoom-hover"
+                style="height: 200px"
+                alt="Music Fiesta"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-warning">
+                  <a href="index.html">Music Fiesta</a>
+                </h5>
+                <p class="mb-1">
+                  <i class="bi bi-calendar-event"></i> Aug 15, 2025 - 6:00 PM
+                </p>
+                <p class="mb-1">
+                  <i class="bi bi-geo-alt"></i> Nairobi Concert Hall
+                </p>
+                <span class="badge bg-success">Ksh 1500</span>
+              </div>
             </div>
+          </div>
+
+          <!-- Event Card 2 -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100 bg-light text-dark border-0 shadow-sm">
+              <img
+                src="img/tickets 5.webp"
+                class="card-img-top img-fluid object-fit-cover zoom-hover"
+                style="height: 200px"
+                alt="Tech Expo"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-warning">
+                  <a href="index.html">Tech Expo 2025</a>
+                </h5>
+                <p class="mb-1">
+                  <i class="bi bi-calendar-event"></i> Sept 5, 2025 - 10:00 AM
+                </p>
+                <p class="mb-1"><i class="bi bi-geo-alt"></i> KICC, Nairobi</p>
+                <span class="badge bg-danger">Sold Out</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event Card 3 -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100 bg-light text-dark border-0 shadow-sm">
+              <img
+                src="img/friday-music-flyer-template-design-ff29f45b038eccef0ab3f142cd7a54ab.jpg"
+                class="card-img-top img-fluid object-fit-cover zoom-hover"
+                style="height: 200px"
+                alt="Creative Workshop"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-warning">
+                  <a href="index.html"> Creative Workshop</a>
+                </h5>
+                <p class="mb-1">
+                  <i class="bi bi-calendar-event"></i> Oct 10, 2025 - 2:00 PM
+                </p>
+                <p class="mb-1">
+                  <i class="bi bi-geo-alt"></i> Nairobi Art Center
+                </p>
+                <span class="badge bg-info">Workshop</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event Card 4 -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100 bg-light text-dark border-0 shadow-sm">
+              <img
+                src="img/jazz-live-concert-poster-design-template-7ef4fd32aca9352144e55ab9161ebe8d.webp"
+                class="card-img-top img-fluid object-fit-cover zoom-hover"
+                style="height: 200px"
+                alt="Business Summit"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-warning">
+                  <a href="index.html">Business Summit</a>
+                </h5>
+                <p class="mb-1">
+                  <i class="bi bi-calendar-event"></i> Nov 20, 2025 - 9:00 AM
+                </p>
+                <p class="mb-1">
+                  <i class="bi bi-geo-alt"></i> Nairobi Conference Center
+                </p>
+                <span class="badge bg-warning">Limited Seats</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event Card 5 -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100 bg-light text-dark border-0 shadow-sm">
+              <img
+                src="img/metal-night-video-design-template-6b26282a364475a925cee1e0ac88f985.webp"
+                class="card-img-top img-fluid object-fit-cover zoom-hover"
+                style="height: 200px"
+                alt="Nairobi Festival"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-warning">
+                  <a href="index.html"> Nairobi Festival</a>
+                </h5>
+                <p class="mb-1">
+                  <i class="bi bi-calendar-event"></i> Dec 25, 2025 - 4:00 PM
+                </p>
+                <p class="mb-1">
+                  <i class="bi bi-geo-alt"></i> Nairobi Festival Grounds
+                </p>
+                <span class="badge bg-secondary">Free Entry</span>
+              </div>
+            </div>
+          </div>
+          <!-- Event Card 6 -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100 bg-light text-dark border-0 shadow-sm">
+              <img
+                src="img/night-club-flyer-design-template-578fe57d1f1d38b8bc50bae88c0e392d.webp"
+                class="card-img-top img-fluid object-fit-cover zoom-hover"
+                style="height: 200px"
+                alt="Art Exhibition"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-warning">
+                  <a href="index.html">Art Exhibition</a>
+                </h5>
+                <p class="mb-1">
+                  <i class="bi bi-calendar-event"></i> Jan 15, 2026 - 11:00 AM
+                </p>
+                <p class="mb-1">
+                  <i class="bi bi-geo-alt"></i> Nairobi Art Gallery
+                </p>
+                <span class="badge bg-primary">Art</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event Card 7 -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100 bg-light text-dark border-0 shadow-sm">
+              <img
+                src="img/night-club-flyer-design-template-795b6f160750be23ce8ebf186611a398.webp"
+                class="card-img-top img-fluid object-fit-cover zoom-hover"
+                style="height: 200px"
+                alt="Nairobi Music Fest"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-warning">
+                  <a href="index.html"> Nairobi Music Fest</a>
+                </h5>
+                <p class="mb-1">
+                  <i class="bi bi-calendar-event"></i> Aug 10, 2025 - 7:00 PM
+                </p>
+                <p class="mb-1">
+                  <i class="bi bi-geo-alt"></i> Kasarani Stadium
+                </p>
+                <span class="badge bg-primary">Music</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event Card 8 -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100 bg-light text-dark border-0 shadow-sm">
+              <img
+                src="img/purple-maximalist-open-mic-night-a1-design-template-6b664db4b57cb3bec32fa480b886bc21.webp"
+                class="card-img-top img-fluid object-fit-cover zoom-hover"
+                style="height: 200px"
+                alt="Literary Summit"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-warning">
+                  <a href="index.html">Literary Summit</a>
+                </h5>
+                <p class="mb-1">
+                  <i class="bi bi-calendar-event"></i> Sep 2, 2025 - 2:00 PM
+                </p>
+                <p class="mb-1">
+                  <i class="bi bi-geo-alt"></i> Kenyatta International
+                  Conference Centre
+                </p>
+                <span class="badge bg-primary">Conference</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event Card 9 -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100 bg-light text-dark border-0 shadow-sm">
+              <img
+                src="img/rock-night-design-template-ef5e544faec956109001198257210c6d.webp"
+                class="card-img-top img-fluid object-fit-cover zoom-hover"
+                style="height: 200px"
+                alt="Urban Style Expo"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-warning">
+                  <a href="index.html">Urban Style Expo</a>
+                </h5>
+                <p class="mb-1">
+                  <i class="bi bi-calendar-event"></i> Oct 5, 2025 - 5:00 PM
+                </p>
+                <p class="mb-1">
+                  <i class="bi bi-geo-alt"></i> Westgate Mall Rooftop
+                </p>
+                <span class="badge bg-primary">Fashion</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event Card 10 -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100 bg-light text-dark border-0 shadow-sm">
+              <img
+                src="img/solo-band-acoustic-concert-poster-template-design-b8a3fe3a4aa931d99085f6971d0f8454.webp"
+                class="card-img-top img-fluid object-fit-cover zoom-hover"
+                style="height: 200px"
+                alt="Startup Connect"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-warning">
+                  <a href="index.html"> Sunrise Wellness</a>
+                </h5>
+                <p class="mb-1">
+                  <i class="bi bi-calendar-event"></i> Nov 12, 2025 - 9:00 AM
+                </p>
+                <p class="mb-1"><i class="bi bi-geo-alt"></i> iHub Nairobi</p>
+                <span class="badge bg-primary">Tech</span>
+              </div>
+            </div>
+          </div>
+          <!-- Event Card 11 -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100 bg-light text-dark border-0 shadow-sm">
+              <img
+                src="img/tickets 5.webp"
+                class="card-img-top img-fluid object-fit-cover zoom-hover"
+                style="height: 200px"
+                alt="Sunrise Wellness"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-warning">
+                  <a href="index.html"> Sunrise Wellness</a>
+                </h5>
+                <p class="mb-1">
+                  <i class="bi bi-calendar-event"></i> Aug 18, 2025 - 6:30 AM
+                </p>
+                <p class="mb-1"><i class="bi bi-geo-alt"></i> Karura Forest</p>
+                <span class="badge bg-primary">Health</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event Card 12 -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100 bg-light text-dark border-0 shadow-sm">
+              <img
+                src="img/tickets 2.webp"
+                class="card-img-top img-fluid object-fit-cover zoom-hover"
+                style="height: 200px"
+                alt="Flavors of Kenya"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-warning">
+                  <a href="index.html"> Flavors of Kenya</a>
+                </h5>
+                <p class="mb-1">
+                  <i class="bi bi-calendar-event"></i> Dec 5, 2025 - 12:00 PM
+                </p>
+                <p class="mb-1">
+                  <i class="bi bi-geo-alt"></i> Nairobi Arboretum
+                </p>
+                <span class="badge bg-primary">Food</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event Card 13 -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100 bg-light text-dark border-0 shadow-sm">
+              <img
+                src="img/tickets 4.webp"
+                class="card-img-top img-fluid object-fit-cover zoom-hover"
+                style="height: 200px"
+                alt="Code & Coffee"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-warning">
+                  <a href="index.html">Code & Coffee</a>
+                </h5>
+                <p class="mb-1">
+                  <i class="bi bi-calendar-event"></i> Jul 30, 2025 - 4:00 PM
+                </p>
+                <p class="mb-1"><i class="bi bi-geo-alt"></i> Nairobi Garage</p>
+                <span class="badge bg-primary">Workshop</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event Card 14 -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100 bg-light text-dark border-0 shadow-sm">
+              <img
+                src="img/tickets 5.webp"
+                class="card-img-top img-fluid object-fit-cover zoom-hover"
+                style="height: 200px"
+                alt="Indie Film Night"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-warning">
+                  <a href="index.html"> Indie Film Night</a>
+                </h5>
+                <p class="mb-1">
+                  <i class="bi bi-calendar-event"></i> Oct 22, 2025 - 8:00 PM
+                </p>
+                <p class="mb-1">
+                  <i class="bi bi-geo-alt"></i> Prestige Plaza Cinema
+                </p>
+                <span class="badge bg-primary">Film</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event Card 15 -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100 bg-light text-dark border-0 shadow-sm">
+              <img
+                src="img/tickets 7.webp"
+                class="card-img-top img-fluid object-fit-cover zoom-hover"
+                style="height: 200px"
+                alt="Paint & Sip"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-warning">
+                  <a href="index.html">Paint & Sip</a>
+                </h5>
+                <p class="mb-1">
+                  <i class="bi bi-calendar-event"></i> Sep 19, 2025 - 3:00 PM
+                </p>
+                <p class="mb-1">
+                  <i class="bi bi-geo-alt"></i> Two Rivers Mall
+                </p>
+                <span class="badge bg-primary">Art</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event Card 16 -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100 bg-light text-dark border-0 shadow-sm">
+              <img
+                src="img/tickets 8.webp"
+                class="card-img-top img-fluid object-fit-cover zoom-hover"
+                style="height: 200px"
+                alt="Afro Dance Bash"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-warning">
+                  <a href="index.html">Afro Dance Bash</a>
+                </h5>
+                <p class="mb-1">
+                  <i class="bi bi-calendar-event"></i> Aug 25, 2025 - 9:00 PM
+                </p>
+                <p class="mb-1">
+                  <i class="bi bi-geo-alt"></i> Sarit Centre Hall
+                </p>
+                <span class="badge bg-primary">Dance</span>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="site-footer py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-3">
-                    <h5 class="text-warning">EventX</h5>
-                    <p>
-                        Your premier destination for discovering and booking events of all
-                        types.
-                    </p>
-                </div>
-                <div class="col-md-2 mb-3">
-                    <h5>Quick Links</h5>
-                    <ul class="footer-links">
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="event.html">Events</a></li>
-                        <li><a href="home.html">About Us</a></li>
-                        <li><a href="home.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <h5>Categories</h5>
-                    <ul class="footer-links">
-                        <li><a href="event.html">Concerts</a></li>
-                        <li><a href="event.html">Conferences</a></li>
-                        <li><a href="event.html">Workshops</a></li>
-                        <li><a href="event.html">Sports</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <h5>Connect With Us</h5>
-                    <div class="social-links">
-                        <a href="#"><i class="bi bi-facebook fs-4"></i></a>
-                        <a href="#"><i class="bi bi-twitter fs-4"></i></a>
-                        <a href="#"><i class="bi bi-instagram fs-4"></i></a>
-                        <a href="#"><i class="bi bi-linkedin fs-4"></i></a>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <h5 class="text-warning">EventX</h5>
+            <p>
+              Your premier destination for discovering and booking events of all
+              types.
+            </p>
+          </div>
+          <div class="col-md-2 mb-3">
+            <h5>Quick Links</h5>
+            <ul class="footer-links">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="event.html">Events</a></li>
+              <li><a href="home.html">About Us</a></li>
+              <li><a href="home.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-3">
+            <h5>Categories</h5>
+            <ul class="footer-links">
+              <li><a href="event.html">Concerts</a></li>
+              <li><a href="event.html">Conferences</a></li>
+              <li><a href="event.html">Workshops</a></li>
+              <li><a href="event.html">Sports</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-3">
+            <h5>Connect With Us</h5>
+            <div class="social-links">
+              <a href="#"><i class="bi bi-facebook fs-4"></i></a>
+              <a href="#"><i class="bi bi-twitter fs-4"></i></a>
+              <a href="#"><i class="bi bi-instagram fs-4"></i></a>
+              <a href="#"><i class="bi bi-linkedin fs-4"></i></a>
             </div>
-            <hr />
-            <div class="text-center">
-                <p class="mb-0">&copy; 2023 EventX. All rights reserved.</p>
-            </div>
+          </div>
         </div>
+        <hr />
+        <div class="text-center">
+          <p class="mb-0">&copy; 2023 EventX. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
 
     <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
+  </body>
 </html>
